@@ -2,8 +2,9 @@
 ## cacheSolve repeats the similarity for solving the inverse of the matrix.
 ##
 ## makeCacheMatrix does the same job here as the example code did for the makeVector 
-## function. Here a method to hold the value of the inverse of a matrix 
-## we create is defined. The return of this function is really list of 4 functions as
+## function. Here a method to define the matrix of interest to the user 
+## and hold the value of the inverse of a matrix we create is defined. 
+## The return of this function is really list of 4 functions as
 ## before. Here the functions are re-named to reflect the task they complete.
 ## 
 
@@ -23,9 +24,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## This function basically takes the matrix assigned when calling the above function and
-## first checks to see if the i contains, NULL, and if so return the value stored. If 
-## not then the inverse of the matrix is calculate by assigning the matrix from the x$get
-## to data and then assigning the inverse to i.
+## first checks to see if the i contains, NULL, and if not returns the value stored. If 
+## it does then the inverse of the matrix is calculate by assigning the matrix from 
+## the x$get to the object data and then assigning the inverse to i.
 
 cacheSolve <- function(x, ...) {
         i <- x$getsolve()
